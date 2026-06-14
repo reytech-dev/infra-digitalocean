@@ -29,9 +29,9 @@ locals {
 }
 
 resource "aws_s3_object" "dns_contract" {
-  bucket        = var.contract_bucket
-  key           = var.contract_key
-  content       = jsonencode(local.contract)
-  content_type  = "application/json"
-  etag          = md5(jsonencode(local.contract))
+  bucket       = var.contract_bucket
+  key          = var.contract_key
+  content      = jsonencode(local.contract)
+  content_type = "application/json"
+  etag         = md5(jsonencode(local.contract))
 }

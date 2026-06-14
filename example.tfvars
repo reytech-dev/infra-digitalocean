@@ -1,10 +1,10 @@
 # ── infra-digitalocean example tfvars ──
 # Copy to terraform.tfvars or prod.tfvars and customize.
 
-environment            = "prod"
-digitalocean_region    = "nyc3"
-contract_bucket        = "my-opentofu-contracts"
-contract_key           = "contracts/prod/digitalocean-dns-targets.json"
+environment         = "prod"
+digitalocean_region = "nyc3"
+contract_bucket     = "my-opentofu-contracts"
+contract_key        = "contracts/prod/digitalocean-dns-targets.json"
 
 # Use these when storing the contract on DigitalOcean Spaces
 # contract_storage_region       = "us-east-1"
